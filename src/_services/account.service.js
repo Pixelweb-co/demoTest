@@ -4,7 +4,7 @@ import config from 'config';
 import { fetchWrapper, history } from '@/_helpers';
 
 const userSubject = new BehaviorSubject(null);
-const baseUrl = `http://192.168.0.5:4000/accounts`;
+const baseUrl = `http://51.222.12.243:4000/accounts`;
 
 export const accountService = {
     login,
