@@ -48,7 +48,7 @@ function refreshToken() {
     console.log("usbsj ",userSubject.value)
 
     if(userSubject.value !== null){
-    return fetchWrapper.post(`${baseUrl}/refresh-token`, {token:JSON.parse(atob(userSubject.value.jwtToken.split('.')[1]))})
+    return fetchWrapper.post(`${baseUrl}/refresh-token`, {})
         .then(user => {
             // publish user to subscribers and start timer to refresh token
             userSubject.next(user);
