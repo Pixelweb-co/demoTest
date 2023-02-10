@@ -7,9 +7,12 @@
     },
     "license": "MIT",
     "scripts": {
-        "build": "webpack --mode production --openssl-legacy-provider",
-        "start": "webpack-dev-server --open --openssl-legacy-provider"
+        "build": "webpack --mode production",
+        "start": "webpack-dev-server --open"
     },
+    "engines": {
+        "node": "14.x"
+      },
     "dependencies": {
         "formik": "^2.1.4",
         "history": "^4.10.1",
